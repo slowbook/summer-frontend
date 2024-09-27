@@ -10,7 +10,7 @@ export const Signin = () => {
 
   const handleAuth = async () => {
     try {
-      const res = await axios.post(`${URL}/user/login`, {
+      const res = await axios.post(`${URL}/user/signin`, {
         email,
         password
       });
@@ -73,6 +73,9 @@ export const Signin = () => {
             >
               Sign in
             </button>
+            <div className='text-white'>
+              Dont have an account? <a href="/signup" className='text-blue-500'>Sign up</a>
+            </div>
           </div>
         </form>
       </div>

@@ -74,6 +74,9 @@ export const Signup = () => {
             >
               Sign up
             </button>
+            <div className='text-white'>
+              Already have an account? <a href="/signin" className='text-blue-500'>Sign in</a>
+            </div>
           </div>
         </form>
       </div>
